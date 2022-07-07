@@ -1,0 +1,221 @@
+/*Css da Página Home*/
+
+.banner {
+     width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /* Issovquer dizer que o titulo irá ter 2 vezes o tamanho das fontes bases*/
+    margin: 0 0 1em; /*Proporcional ao paragrafo do título*/
+    clear: left; /* Limpa o Float*/
+}
+
+.imagem-icon{
+    width: 160px;
+    float: left;
+    margin: 1em;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.mapa{
+    padding: 3em;
+}
+
+.mapa p {
+   margin: 0 0 2em;
+}
+
+.imagembeneficios {
+    width: 60%;
+    display: block; /* esses dois comandos colocaram a imagem no centro*/
+    margin: 0 auto;
+}
+
+
+
+/*Css da Página Produtos*/
+
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color:#e9b754 ;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+nav {
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+/* Coloquei o espaço (margin) no nav pois se encaixa como um todo, observe
+no inspecionar do google*/
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;    
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 29px;
+    text-decoration: none; /*tirei o subllinhado*/
+}  
+
+nav a:hover { /*como ele comporta quando o mouse passa pela frase */
+    color: #ff9c08;
+}
+
+.produtos{
+    width:940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+     display: inline-block;
+     text-align: center;    
+     width: 30%;
+     vertical-align: top;
+     margin: 0 1.5%;
+     padding: 30px 20px;
+     box-sizing: border-box; /*agora o width é definitivo, e os px estão dentro 
+     dos 30%*/
+     border-color:#e9b754; /* A cor da borda*/
+     border-width:2px;   /* A tamanho no total da borda, se querer só em cima 
+     ou em baixo tem que especificar*/
+     border-style:solid; /* Tipo da borda*/
+     border: 2px solid #e9b754; /* O jeito mais facil*/
+     border-radius: 10px;    
+}
+
+.produtos li:hover {
+     color: #ff9c08;
+     border-color: #ff9c08;
+}
+.produtos li:hover h2 {
+    font-size:35px;
+}
+.produtos li:active {
+    border-color: black;
+}
+
+/* Como já tem uma class no produtos é só colocar o especificação, como quero mudar
+o título h2, coloquei e mudei tanto a o tamanho da fonte como o tipo/peso da fonte.*/
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.produto-preço {
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 10px 0 0; /* espaçamento interno ou margin-top:10px*/
+}
+
+.produto-descrição {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: #e9b754;
+    padding: 40px 0;
+}
+
+.Copyright {
+    color: white;
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+/*Css da Página Contato*/
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;  /*Um espaço no entre o fim do cabeçario e no começo;*/   
+}
+
+form label, form legend {/*Com a virgula é possivel colocar duas tags onde você quer que as duas fiquem iguais;*/
+    display: block; /*Para cada quadrinho fique um embaixo do outro;*/
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.input-padrão {  
+    display: block; /*Para cada quadrinho fique um embaixo do outro;*/
+    margin:0 0 20px;
+    padding:10px 25px;
+    width:50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+ 
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: rgb(255, 183, 50);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border:none;
+    border-radius: 5px;
+    transition: 0.5s all ; /*Essa tag ela é para diminuir o tempo da cor;*/
+    cursor: pointer; /*Ela é para aparecer a mãozinha no botão;*/
+}
+
+.enviar:hover {
+    background-color: brown;
+    transform:scale(1.2);
+}
+
+table {
+    margin: 20px 40px;
+    width: 30%;
+    font-size: 18px;
+}
+
+thead {
+    background-color:#e9b754;
+    color:white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+td, th {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:20px 8px ;
+}
+
